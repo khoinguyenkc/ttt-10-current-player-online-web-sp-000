@@ -10,24 +10,16 @@ def turn_count(board)
 end
 
 def current_player(board)
-  exes = 0
-  board.each do | item |
-    if item == "X"
-      exes += 1
-    end
-  end
+  turns = turn_count(board)
 
-  ohs = 0
-  board.each do | item |
-    if item == "O"
-      ohs += 1
-    end
-  end
-
-
-  if (exes % 2 == 0)
+  if (turns % 2 == 0)
     return "X"
   else
     return "O"
   end
+  
 end
+
+
+
+
