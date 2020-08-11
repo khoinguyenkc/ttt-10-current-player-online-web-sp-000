@@ -17,5 +17,14 @@ def turn_count(board)
   #this will get returned
 end
 
-hi = turn_count(["X", " ", "X", "X"])
-puts hi
+def current_player(board)
+  exesandohs = turn_count(board)
+  exes = exesandohs[0]
+  ohs = exesandohs[1]
+
+  if (exes % 2 == 0)
+    return "X"
+  else
+    return "O"
+  end
+end
