@@ -18,3 +18,4 @@ def turn_count(board)
 end
 
 hi = turn_count(["X", " ", "O", "X"])
+puts hi
