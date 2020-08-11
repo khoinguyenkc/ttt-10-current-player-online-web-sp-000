@@ -13,8 +13,8 @@ def turn_count(board)
     end
   end
 
-  puts exes
-  puts ohs
+  exesandohs = [exes, ohs]
+  #this will get returned
 end
 
-turn_count(["X", " ", "X", "O"])
+hi = turn_count(["X", " ", "O", "X"])
