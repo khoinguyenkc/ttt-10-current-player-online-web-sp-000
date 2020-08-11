@@ -1,4 +1,13 @@
 def turn_count(board)
+  turns = 0
+  board.each do | item |
+    if item == "X" || item == "O"
+      turns +=1
+    end
+  return turns
+end
+
+def current_player(board)
   exes = 0
   board.each do | item |
     if item == "X"
@@ -13,14 +22,6 @@ def turn_count(board)
     end
   end
 
-  exesandohs = [exes, ohs]
-  #this will get returned
-end
-
-def current_player(board)
-  exesandohs = turn_count(board)
-  exes = exesandohs[0]
-  ohs = exesandohs[1]
 
   if (exes % 2 == 0)
     return "X"
