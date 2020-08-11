@@ -17,5 +17,5 @@ def turn_count(board)
   #this will get returned
 end
 
-hi = turn_count(["X", " ", "O", "X"])
+hi = turn_count(["X", " ", "X", "X"])
 puts hi
